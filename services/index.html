@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/sasquatch-pest-control/services/">
+<!-- BASE:END -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://paymegpt.com/widget.js" data-widget="32575097" async></script>
+  
+
+<!-- SEO Meta Tags -->
+<title>Sasquatch Pest Control Services | Upstate New York Pest Control</title>
+<meta name="description" content="Explore complete pest control services from Sasquatch Pest Control in Upstate New York, including ant control, bed bug treatment, rodent removal, wildlife exclusion, mosquito control, termite treatment, and more." />
+<meta property="og:title" content="Sasquatch Pest Control Services | Upstate New York Pest Control" />
+<meta property="og:description" content="Explore complete pest control services from Sasquatch Pest Control in Upstate New York, including ant control, bed bug treatment, rodent removal, wildlife exclusion, mosquito control, termite treatment, and more." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Sasquatch Pest Control Services | Upstate New York Pest Control" />
+<meta name="twitter:description" content="Explore complete pest control services from Sasquatch Pest Control in Upstate New York, including ant control, bed bug treatment, rodent removal, wildlife exclusion, mosquito control, termite treatment, and more." />
+<!-- End SEO Meta Tags -->
+
+<script data-gate>
+(function(){
+  var slug='zwMidcMh';var apiBase='https://paymegpt.com';var currency='USD';var presets=[2500,5000,10000,25000];var minAmt=100;var maxAmt=1000000;var thankYouMsg='Thank you for your generous donation!';
+  var successSubtext='Your donation has been processed successfully.';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function getLang(){var l=(document.documentElement.lang||navigator.language||'en').toLowerCase();return l.split('-')[0];}
+  function getLocale(){return (document.documentElement.lang||navigator.language||'en');}
+  var I18N={en:{min:'Minimum is ',max:'Maximum is ',emailPrompt:'Enter your email for the receipt:',emailRequired:'An email address is required to complete checkout.',failed:'Failed to process donation'},fr:{min:'Le minimum est ',max:'Le maximum est ',emailPrompt:'Entrez votre adresse e-mail pour le reçu :',emailRequired:'Une adresse e-mail est requise pour finaliser le paiement.',failed:'Échec du traitement du don'},es:{min:'El mínimo es ',max:'El máximo es ',emailPrompt:'Introduce tu correo electrónico para el recibo:',emailRequired:'Se requiere una dirección de correo electrónico para completar el pago.',failed:'No se pudo procesar la donación'},pt:{min:'O mínimo é ',max:'O máximo é ',emailPrompt:'Insira seu e-mail para o recibo:',emailRequired:'Um endereço de e-mail é necessário para concluir o pagamento.',failed:'Falha ao processar a doação'},de:{min:'Mindestbetrag ist ',max:'Höchstbetrag ist ',emailPrompt:'Geben Sie Ihre E-Mail-Adresse für die Quittung ein:',emailRequired:'Eine E-Mail-Adresse ist erforderlich, um den Checkout abzuschließen.',failed:'Spende konnte nicht verarbeitet werden'},it:{min:'Il minimo è ',max:'Il massimo è ',emailPrompt:'Inserisci la tua email per la ricevuta:',emailRequired:"È richiesto un indirizzo email per completare il pagamento.",failed:'Impossibile elaborare la donazione'}};
+  function t(k){var L=getLang();return (I18N[L]&&I18N[L][k])||I18N.en[k];}
+  function fmtD(c){try{return new Intl.NumberFormat(getLocale(),{style:'currency',currency:currency}).format(c/100);}catch(e){return new Intl.NumberFormat('en-US',{style:'currency',currency:currency}).format(c/100);}}
+  function findDonEmail(){var ids=['email','emailAddress','buyer-email','buyerEmail','donor-email','donorEmail','user-email','userEmail','contact-email'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.indexOf('@')>-1)return el.value.trim();}var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.indexOf('@')>-1)return inputs[j].value.trim();}return '';}
+  function findDonName(){var ids=['name','fullName','full-name','donor-name','donorName','customer-name','user-name'];for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"])');for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}return '';}
+  window.__processDonation=function(a,b,c,d){
+    var amountCents,email='',donorName='',donorMessage='',productName='',productDescription='',quantity=1;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents||(a.amount?Math.round(Number(a.amount)*100):0);
+      email=a.email||'';
+      productName=a.productName||a.label||'';
+      productDescription=a.productDescription||a.description||'';
+      donorName=a.name||a.donorName||'';
+      donorMessage=a.message||a.donorMessage||'';
+      quantity=a.quantity&&parseInt(a.quantity,10)>0?parseInt(a.quantity,10):1;
+    }else{
+      amountCents=typeof a==='number'?a:(parseInt(a,10)||0);
+      var rest=[b,c,d];var nonEmail=[];
+      for(var i=0;i<rest.length;i++){var v=rest[i];if(typeof v==='string'&&v){if(!email&&v.indexOf('@')>-1&&/^[^s@]+@[^s@]+.[^s@]+$/.test(v.trim())){email=v.trim();}else{nonEmail.push(v);}}}
+      donorName=nonEmail[0]||'';donorMessage=nonEmail[1]||'';
+    }
+    if(!email)email=findDonEmail();
+    if(!donorName)donorName=findDonName();
+    if(!amountCents||amountCents<minAmt){alert(t('min')+fmtD(minAmt));return Promise.reject('below_min');}
+    if(amountCents>maxAmt){alert(t('max')+fmtD(maxAmt));return Promise.reject('above_max');}
+    if(!email){var p=window.prompt(t('emailPrompt'),'');if(p&&p.indexOf('@')>-1){email=p.trim();}else{alert(t('emailRequired'));return Promise.reject('no_email');}}
+    var successBase=window.location.href.split('?')[0];
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/donation/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:donorName||'',amountCents:amountCents,message:donorMessage||'',productName:productName||'',productDescription:productDescription||'',quantity:quantity,locale:getLocale(),successUrl:successBase+'?donation=success&email='+encodeURIComponent(email)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?donation=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||t('failed'));throw new Error(d.error);}
+    });
+  };
+  window.__donationConfig={currency:currency,presets:presets.map(function(c){return c/100;}),minAmount:minAmt/100,maxAmount:maxAmt/100,formatAmount:fmtD};
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('donation')==='success'){
+      var overlay=document.createElement('div');overlay.id='donation-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">'+esc(thankYouMsg)+'</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(successSubtext)+'</p><button id="lp-don-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var dBtn=document.getElementById('lp-don-success-btn');
+      if(dBtn){dBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://paymegpt.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=4330');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='zwMidcMh';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="antialiased">
+  <!-- ============================================================================ -->
+  <!-- NAVBAR: Main site navigation for Sasquatch Pest Control                     -->
+  <!-- Links: index.html, services.html, pests.html, contact.html                  -->
+  <!-- Mobile Padding: Ensures content never touches viewport edges               -->
+  <!-- ============================================================================ -->
+  <header data-section="navbar" class="sticky top-0 z-50 border-b border-white/10 bg-black/90 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 md:px-8 lg:px-12">
+      <a href="index.html" class="flex items-center gap-3 text-white">
+        <span class="flex h-11 w-11 items-center justify-center rounded-full bg-brand-orange text-xl font-black text-black">S</span>
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.3em] text-brand-orange">Sasquatch</p>
+          <p class="text-sm text-white/80">Pest Control</p>
+        </div>
+      </a>
+      <nav class="hidden gap-6 text-sm font-medium md:flex">
+        <a class="text-white/80 transition hover:text-brand-orange" href="index.html">Home</a>
+        <a class="text-brand-orange" href="services.html" aria-current="page">Services</a>
+        <a class="text-white/80 transition hover:text-brand-orange" href="pests.html">Pests We Handle</a>
+        <a class="text-white/80 transition hover:text-brand-orange" href="contact.html">Contact</a>
+      </nav>
+      <a href="contact.html" class="inline-flex items-center rounded-full bg-brand-orange px-4 py-2 text-sm font-bold text-black transition hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-black">
+        Get Free Estimate
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================================================================ -->
+    <!-- HERO SECTION: Strong headline, service promise, and primary CTA            -->
+    <!-- Mobile Padding: Safe spacing for 375px screens                             -->
+    <!-- ============================================================================ -->
+    <section data-section="hero" class="relative overflow-hidden border-b border-white/10 brand-dark">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(245,158,11,0.14),_transparent_42%),linear-gradient(180deg,rgba(26,26,26,0.96),rgba(15,17,16,1))]"></div>
+      <div class="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 md:px-8 md:py-20 lg:px-12 lg:py-24">
+        <div class="max-w-3xl">
+          <p class="mb-4 inline-flex rounded-full border border-brand px-4 py-2 text-xs font-bold uppercase tracking-[0.32em] text-brand-orange">Upstate New York Full-Service Protection</p>
+          <h1 class="text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">
+            Complete Pest Control Solutions
+          </h1>
+          <p class="mt-5 max-w-2xl text-lg leading-8 text-white/80 sm:text-xl">
+            No pest is too tough for Sasquatch. From stubborn infestations to preventative maintenance, our team delivers rugged, reliable service for homes, cabins, farms, rental properties, and businesses across Upstate New York.
+          </p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="contact.html" class="inline-flex items-center justify-center rounded-full bg-brand-orange px-6 py-3 font-bold text-black transition hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-brand-orange focus:ring-offset-2 focus:ring-offset-black">
+              Get Free Estimate
+            </a>
+            <a href="#services-list" class="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 font-bold text-white transition hover:border-brand-orange hover:text-brand-orange">
+              Explore Services
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- TRUST / VALUE STRIP: Quick proof points and service confidence             -->
+    <!-- ============================================================================ -->
+    <section data-section="trust-strip" class="border-b border-white/10 bg-black">
+      <div class="mx-auto grid max-w-7xl gap-4 px-4 py-8 sm:px-6 md:grid-cols-3 md:px-8 lg:px-12">
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+          <p class="text-sm font-semibold uppercase tracking-[0.25em] text-brand-orange">Fast Response</p>
+          <p class="mt-2 text-white/85">Prompt inspections and treatments designed to stop infestations before they spread.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+          <p class="text-sm font-semibold uppercase tracking-[0.25em] text-brand-orange">Rugged Protection</p>
+          <p class="mt-2 text-white/85">Interior, exterior, and exclusion strategies built for New York weather and real-world pressure.</p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+          <p class="text-sm font-semibold uppercase tracking-[0.25em] text-brand-orange">Residential & Commercial</p>
+          <p class="mt-2 text-white/85">Homes, hotels, restaurants, rental properties, barns, and outbuildings all get tailored service.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- SERVICES INTRO: Sets expectations for the detailed service lineup          -->
+    <!-- ============================================================================ -->
+    <section data-section="services-intro" class="bg-[#121413]">
+      <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 md:px-8 lg:px-12">
+        <div class="max-w-3xl">
+          <h2 class="text-3xl font-black text-white sm:text-4xl">Every pest problem needs a different kind of fight</h2>
+          <p class="mt-4 text-white/75">
+            Sasquatch Pest Control uses targeted treatments, prevention methods, and ongoing maintenance plans to match the pest, the property, and the severity of the issue. Below you’ll find our full service lineup with what each treatment includes and what you can expect during the visit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- SERVICES GRID: Detailed service cards with CTA buttons                     -->
+    <!-- ============================================================================ -->
+    <section id="services-list" data-section="services-grid" class="bg-[#0f1110]">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:px-8 lg:px-12">
+        <div class="grid gap-6 lg:grid-cols-2">
+          <article class="card-glow rounded-3xl border border-white/10 bg-white/5 p-6">
+            <div class="text-4xl">🐜</div>
+            <h3 class="mt-4 text-2xl font-extrabold text-white">Ant Control</h3>
+            <p class="mt-3 text-white/75">We tackle carpenter ants, pavement ants, and odorous house ants with targeted interior and exterior treatments that go after the colony, not just the visible trail. This service is ideal for kitchens, foundations, patios, and damp wood areas where ants commonly establish activity.</p>
+            <p class="mt-3 text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">What to expect</p>
+            <p class="mt-2 text-white/80">A property inspection, identification of nesting and entry points, perimeter treatment, and guidance on reducing moisture and food sources around the structure.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-brand-orange px-5 py-3 font-bold text-black transition hover:bg-yellow-500">Get Free Estimate</a>
+          </article>
+
+          <article class="card-glow rounded-3xl border border-white/10 bg-white/5 p-6">
+            <div class="text-4xl">🛏️</div>
+            <h3 class="mt-4 text-2xl font-extrabold text-white">Bed Bug Treatment</h3>
+            <p class="mt-3 text-white/75">Bed bugs demand a thorough, disciplined approach, which is why we offer heat treatments, chemical treatments, and detailed inspections for both hotel rooms and residential spaces. We focus on disrupting the infestation at every stage, from harborages in beds and furniture to cracks, seams, and baseboards.</p>
+            <p class="mt-3 text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">What to expect</p>
+            <p class="mt-2 text-white/80">An intensive inspection, treatment plan based on the severity of activity, preparation instructions, and follow-up recommendations to confirm the population has been eliminated.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-brand-orange px-5 py-3 font-bold text-black transition hover:bg-yellow-500">Get Free Estimate</a>
+          </article>
+
+          <article class="card-glow rounded-3xl border border-white/10 bg-white/5 p-6">
+            <div class="text-4xl">🪳</div>
+            <h3 class="mt-4 text-2xl font-extrabold text-white">Cockroach Extermination</h3>
+            <p class="mt-3 text-white/75">From German cockroaches in kitchens to larger American cockroaches in basements and utility spaces, our extermination plans combine gel baits, insect growth regulators, and residual sprays. The goal is to break the breeding cycle and remove the conditions that allow roaches to thrive.</p>
+            <p class="mt-3 text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">What to expect</p>
+            <p class="mt-2 text-white/80">Inspection of hot spots, food and moisture source checks, targeted treatment in hiding areas, and a practical prevention plan for sanitation and sealing access points.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-brand-orange px-5 py-3 font-bold text-black transition hover:bg-yellow-500">Get Free Estimate</a>
+          </article>
+
+          <article class="card-glow rounded-3xl border border-white/10 bg-white/5 p-6">
+            <div class="text-4xl">🦟</div>
+            <h3 class="mt-4 text-2xl font-extrabold text-white">Mosquito Control</h3>
+            <p class="mt-3 text-white/75">Our mosquito control service is built for outdoor comfort, property enjoyment, and event-ready protection. We use seasonal barrier sprays and standing water treatment to reduce breeding pressure around lawns, patios, decks, and wooded edges.</p>
+            <p class="mt-3 text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">What to expect</p>
+            <p class="mt-2 text-white/80">A review of problem areas, treatment around vegetation and shaded resting spots, water source recommendations, and a schedule that supports peak mosquito season.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-brand-orange px-5 py-3 font-bold text-black transition hover:bg-yellow-500">Get Free Estimate</a>
+          </article>
+
+          <article class="card-glow rounded-3xl border border-white/10 bg-white/5 p-6">
+            <div class="text-4xl">🐭</div>
+            <h3 class="mt-4 text-2xl font-extrabold text-white">Rodent Control</h3>
+            <p class="mt-3 text-white/75">Mice and rats can damage insulation, chew wiring, and contaminate stored food fast, so our rodent control program is built for immediate action and long-term exclusion. We handle mice, Norway rats, and roof-rat activity using snap traps, tamper-resistant bait stations, and structural sealing recommendations.</p>
+            <p class="mt-3 text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">What to expect</p>
+            <p class="mt-2 text-white/80">A full inspection for droppings, nesting, and entry points, strategic trap or bait placement, and a clear plan for closing the gaps rodents use to get inside.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-brand-orange px-5 py-3 font-bold text-black transition hover:bg-yellow-500">Get Free Estimate</a>
+          </article>
+
+          <article class="card-glow rounded-3xl border border-white/10 bg-white/5 p-6">
+            <div class="text-4xl">🐝</div>
+            <h3 class="mt-4 text-2xl font-extrabold text-white">Wasp & Bee Removal</h3>
+            <p class="mt-3 text-white/75">Yellowjackets, hornets, and bald-faced hornets can become dangerous quickly, especially near doorways, eaves, porches, and play areas. We provide nest removal and, when possible, hive relocation to protect people while addressing the infestation safely and decisively.</p>
+            <p class="mt-3 text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">What to expect</p>
+            <p class="mt-2 text-white/80">A safe site assessment, protective treatment or removal method based on the species, and advice for preventing future nesting in vulnerable exterior spaces.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-brand-orange px-5 py-3 font-bold text-black transition hover:bg-yellow-500">Get Free Estimate</a>
+          </article>
+
+          <article class="card-glow rounded-3xl border border-white/10 bg-white/5 p-6">
+            <div class="text-4xl">🕷️</div>
+            <h3 class="mt-4 text-2xl font-extrabold text-white">Spider Control</h3>
+            <p class="mt-3 text-white/75">Cellar spiders, wolf spiders, and common house spiders often show up in garages, basements, sheds, and corners where insects are already active. Our spider control service focuses on perimeter treatments and reducing the prey sources that attract them indoors.</p>
+            <p class="mt-3 text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">What to expect</p>
+            <p class="mt-2 text-white/80">A review of webbing and harborage areas, exterior perimeter treatment, and guidance for decluttering storage zones and sealing gaps around windows and utility penetrations.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-brand-orange px-5 py-3 font-bold text-black transition hover:bg-yellow-500">Get Free Estimate</a>
+          </article>
+
+          <article class="card-glow rounded-3xl border border-white/10 bg-white/5 p-6">
+            <div class="text-4xl">🏠</div>
+            <h3 class="mt-4 text-2xl font-extrabold text-white">Termite Inspection &amp; Treatment</h3>
+            <p class="mt-3 text-white/75">Subterranean termites can quietly damage framing, sill plates, and structural components before anyone notices visible signs. We provide thorough inspections, Termidor treatments, bait systems, and annual checkups to help protect one of your biggest investments.</p>
+            <p class="mt-3 text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">What to expect</p>
+            <p class="mt-2 text-white/80">A foundation-to-attic evaluation, identification of moisture risks and termite activity, a treatment recommendation based on findings, and annual monitoring options for peace of mind.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-brand-orange px-5 py-3 font-bold text-black transition hover:bg-yellow-500">Get Free Estimate</a>
+          </article>
+
+          <article class="card-glow rounded-3xl border border-white/10 bg-white/5 p-6">
+            <div class="text-4xl">🦝</div>
+            <h3 class="mt-4 text-2xl font-extrabold text-white">Wildlife Removal</h3>
+            <p class="mt-3 text-white/75">Raccoons, skunks, groundhogs, and squirrels can tear into attics, under decks, crawl spaces, and landscaping. We use humane live trapping and exclusion methods to remove the animals and reduce the chance of them returning to the same space.</p>
+            <p class="mt-3 text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">What to expect</p>
+            <p class="mt-2 text-white/80">A property-specific wildlife assessment, safe removal or trapping strategy, sealing of access points, and repair recommendations for damaged openings or nesting locations.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-brand-orange px-5 py-3 font-bold text-black transition hover:bg-yellow-500">Get Free Estimate</a>
+          </article>
+
+          <article class="card-glow rounded-3xl border border-white/10 bg-white/5 p-6">
+            <div class="text-4xl">🦟</div>
+            <h3 class="mt-4 text-2xl font-extrabold text-white">Tick &amp; Flea Treatment</h3>
+            <p class="mt-3 text-white/75">Deer ticks, dog ticks, and fleas can turn yards and homes into uncomfortable, high-risk environments for families and pets. We combine yard sprays and indoor flea treatments to target both the outdoor source and the interior infestation cycle.</p>
+            <p class="mt-3 text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">What to expect</p>
+            <p class="mt-2 text-white/80">A treatment plan for grass, shaded edges, pet-rest areas, and interior problem zones, along with practical guidance for reducing re-infestation pressure from wildlife and pets.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-brand-orange px-5 py-3 font-bold text-black transition hover:bg-yellow-500">Get Free Estimate</a>
+          </article>
+
+          <article class="card-glow rounded-3xl border border-white/10 bg-white/5 p-6">
+            <div class="text-4xl">🪲</div>
+            <h3 class="mt-4 text-2xl font-extrabold text-white">Stink Bug Control</h3>
+            <p class="mt-3 text-white/75">Brown marmorated stink bugs often invade homes in the fall, hiding in walls, windows, and attic spaces before making their way inside. Our exclusion and perimeter treatments help keep these seasonal invaders outside where they belong.</p>
+            <p class="mt-3 text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">What to expect</p>
+            <p class="mt-2 text-white/80">A seasonal inspection, treatment of key entry points, recommendations for sealing gaps, and a fall-prevention strategy that reduces overwintering activity.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-brand-orange px-5 py-3 font-bold text-black transition hover:bg-yellow-500">Get Free Estimate</a>
+          </article>
+
+          <article class="card-glow rounded-3xl border border-white/10 bg-white/5 p-6 lg:col-span-2">
+            <div class="text-4xl">🛡️</div>
+            <h3 class="mt-4 text-2xl font-extrabold text-white">General Pest Prevention Plans</h3>
+            <p class="mt-3 text-white/75">If you want year-round defense, our prevention plans are designed to cover the most common pests before they become a major problem. We offer quarterly, bi-monthly, and monthly plans with discounted pricing for ongoing maintenance and proactive protection.</p>
+            <p class="mt-3 text-sm font-semibold uppercase tracking-[0.2em] text-brand-orange">What to expect</p>
+            <p class="mt-2 text-white/80">Scheduled service visits, targeted perimeter treatments, interior touch-ups as needed, and a dependable plan that helps keep ants, spiders, roaches, and other pests from returning.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-brand-orange px-5 py-3 font-bold text-black transition hover:bg-yellow-500">Get Free Estimate</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- PRICING SECTION: Clear, honest pricing guidance and service expectations    -->
+    <!-- ============================================================================ -->
+    <section data-section="pricing" class="border-y border-white/10 bg-[#121413]">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:px-8 lg:px-12">
+        <div class="grid gap-8 lg:grid-cols-[1.3fr_0.7fr] lg:items-center">
+          <div>
+            <h2 class="text-3xl font-black text-white sm:text-4xl">Pricing is built around your property, not a one-size-fits-all guess</h2>
+            <p class="mt-4 max-w-2xl text-white/75">
+              All estimates are free. Final pricing depends on property size, pest type, access conditions, and how severe the problem is. We offer both one-time treatments for urgent issues and ongoing maintenance plans for long-term protection.
+            </p>
+          </div>
+          <div class="rounded-3xl border border-brand-orange/30 bg-black/40 p-6">
+            <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-orange">Common options</p>
+            <ul class="mt-4 space-y-3 text-white/80">
+              <li>• One-time inspections and corrective treatments</li>
+              <li>• Seasonal mosquito, tick, and flea programs</li>
+              <li>• Quarterly, bi-monthly, and monthly protection plans</li>
+              <li>• Commercial service schedules for businesses and rentals</li>
+            </ul>
+            <a href="contact.html" class="mt-6 inline-flex w-full items-center justify-center rounded-full bg-brand-orange px-5 py-3 font-bold text-black transition hover:bg-yellow-500">Request Your Free Estimate</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- FAQ SECTION: Quick answers for common service questions                    -->
+    <!-- ============================================================================ -->
+    <section data-section="faq" class="bg-[#0f1110]">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:px-8 lg:px-12">
+        <h2 class="text-3xl font-black text-white sm:text-4xl">Frequently asked questions</h2>
+        <div class="mt-8 grid gap-5 lg:grid-cols-2">
+          <details class="rounded-2xl border border-white/10 bg-white/5 p-5">
+            <summary class="cursor-pointer text-lg font-bold text-white">Do you treat both homes and commercial properties?</summary>
+            <p class="mt-3 text-white/75">Yes. We service houses, apartments, cabins, restaurants, hotels, offices, farms, and other properties across Upstate New York.</p>
+          </details>
+          <details class="rounded-2xl border border-white/10 bg-white/5 p-5">
+            <summary class="cursor-pointer text-lg font-bold text-white">How fast can you get started?</summary>
+            <p class="mt-3 text-white/75">Response times depend on scheduling and the type of pest, but we work hard to provide prompt inspections and fast treatment options for urgent problems.</p>
+          </details>
+          <details class="rounded-2xl border border-white/10 bg-white/5 p-5">
+            <summary class="cursor-pointer text-lg font-bold text-white">Are your prevention plans worth it?</summary>
+            <p class="mt-3 text-white/75">For many properties, yes. Ongoing service helps stop recurring pest pressure, protects vulnerable areas, and often costs less than repeated emergency treatments.</p>
+          </details>
+          <details class="rounded-2xl border border-white/10 bg-white/5 p-5">
+            <summary class="cursor-pointer text-lg font-bold text-white">Can you help after hours or for special events?</summary>
+            <p class="mt-3 text-white/75">We can often help with event-related mosquito control and urgent infestations. Reach out through the contact page and we’ll review the situation quickly.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- CONTACT CTA: Strong closing call-to-action to drive estimate requests      -->
+    <!-- ============================================================================ -->
+    <section data-section="cta" class="bg-gradient-to-r from-[#1a1a1a] to-[#101312]">
+      <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 md:px-8 lg:px-12">
+        <div class="rounded-3xl border border-brand-orange/25 bg-black/45 p-8 md:p-10">
+          <div class="max-w-3xl">
+            <p class="text-sm font-semibold uppercase tracking-[0.3em] text-brand-orange">Ready When You Are</p>
+            <h2 class="mt-3 text-3xl font-black text-white sm:text-4xl">Get the Sasquatch team on your side</h2>
+            <p class="mt-4 text-white/75">
+              Whether you’re dealing with a single pest problem or want a recurring protection plan, we’re ready to build a solution that fits your property and your budget.
+            </p>
+          </div>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="contact.html" class="inline-flex items-center justify-center rounded-full bg-brand-orange px-6 py-3 font-bold text-black transition hover:bg-yellow-500">Contact Us Today</a>
+            <a href="pests.html" class="inline-flex items-center justify-center rounded-full border border-white/20 px-6 py-3 font-bold text-white transition hover:border-brand-orange hover:text-brand-orange">See Common Pests</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================================ -->
+  <!-- FOOTER: Final site links, social link, and copyright                        -->
+  <!-- ============================================================================ -->
+  <footer data-section="footer" class="border-t border-white/10 bg-black">
+    <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6 md:px-8 lg:px-12">
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div>
+          <p class="text-lg font-black text-white">Sasquatch Pest Control</p>
+          <p class="mt-3 max-w-md text-white/70">Full-service pest control for Upstate New York with a rugged approach, thorough work, and free estimates on every job.</p>
+        </div>
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.25em] text-brand-orange">Navigation</p>
+          <ul class="mt-4 space-y-2 text-white/75">
+            <li><a class="transition hover:text-brand-orange" href="index.html">Home</a></li>
+            <li><a class="transition hover:text-brand-orange" href="services.html">Services</a></li>
+            <li><a class="transition hover:text-brand-orange" href="pests.html">Pests We Handle</a></li>
+            <li><a class="transition hover:text-brand-orange" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.25em] text-brand-orange">Follow</p>
+          <a class="mt-4 inline-flex text-white/75 transition hover:text-brand-orange" href="https://www.facebook.com/profile.php?id=61579327053844" target="_blank" rel="noopener noreferrer">
+            Facebook
+          </a>
+        </div>
+      </div>
+      <div class="mt-10 border-t border-white/10 pt-6 text-sm text-white/55">
+        © 2026 Sasquatch Pest Control. All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
