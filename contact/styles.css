@@ -1,0 +1,14 @@
+/* ===== BRAND BASE STYLES ===== */
+    /* Rugged, high-contrast visual system with brand colors and mobile-safe spacing */
+    :root{
+      --charcoal:#1a1a1a;
+      --orange:#F59E0B;
+      --green:#2d5a27;
+    }
+    html{scroll-behavior:smooth}
+    body{background:var(--charcoal);color:#f5f5f5}
+    .brand-orange{color:var(--orange)}
+    .bg-brand-orange{background:var(--orange)}
+    .bg-brand-green{background:var(--green)}
+    .border-brand-orange{border-color:var(--orange)}
+    .focus-ring:focus{outline:2px solid var(--orange);outline-offset:2px}
