@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/sasquatch-pest-control/">
+<!-- BASE:END -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://paymegpt.com/widget.js" data-widget="32575097" async></script>
+  
+
+<!-- SEO Meta Tags -->
+<title>Sasquatch Pest Control | Upstate NY Pest Control</title>
+<meta name="description" content="Bold, rugged homepage for Sasquatch Pest Control serving Upstate New York with ant, rodent, bed bug, mosquito, termite, and wildlife removal services." />
+<meta property="og:title" content="Sasquatch Pest Control | Upstate NY Pest Control" />
+<meta property="og:description" content="Bold, rugged homepage for Sasquatch Pest Control serving Upstate New York with ant, rodent, bed bug, mosquito, termite, and wildlife removal services." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Sasquatch Pest Control | Upstate NY Pest Control" />
+<meta name="twitter:description" content="Bold, rugged homepage for Sasquatch Pest Control serving Upstate New York with ant, rodent, bed bug, mosquito, termite, and wildlife removal services." />
+<!-- End SEO Meta Tags -->
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://paymegpt.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=4328');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='ir6LXUYD';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-zinc-100 antialiased">
+  <!-- ============================================================================ -->
+  <!-- NAVBAR: Simple top navigation with root-relative links                       -->
+  <!-- Mobile Padding: Prevents edge clipping on small screens                      -->
+  <!-- ============================================================================ -->
+  <nav data-section="navbar" class="sticky top-0 z-50 border-b border-white/10 bg-[#1a1a1a]/95 backdrop-blur">
+    <div class="mx-auto max-w-7xl px-4 py-4 md:px-8 lg:px-12 flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3 min-w-0">
+        <div class="h-11 w-11 rounded-xl bg-gradient-to-br from-[#2d5a27] to-[#F59E0B] flex items-center justify-center text-2xl shadow-lg">🦶</div>
+        <div class="min-w-0">
+          <p class="text-sm uppercase tracking-[.28em] text-orange-400 font-bold">Sasquatch Pest Control</p>
+          <p class="text-xs text-zinc-400">Upstate New York</p>
+        </div>
+      </a>
+      <div class="hidden md:flex items-center gap-6 text-sm font-semibold">
+        <a href="index.html" class="hover:text-orange-400 transition">Home</a>
+        <a href="services.html" class="hover:text-orange-400 transition">Services</a>
+        <a href="pests.html" class="hover:text-orange-400 transition">Common Pests (Upstate NY)</a>
+        <a href="contact.html" class="hover:text-orange-400 transition">Contact</a>
+      </div>
+      <a href="contact.html" class="hidden sm:inline-flex rounded-full bg-[#F59E0B] px-5 py-3 font-bold text-[#111] hover:bg-orange-400 transition">Free Estimate</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ============================================================================ -->
+    <!-- HERO SECTION: Strong headline, logo concept, and primary CTA                 -->
+    <!-- Features: Dark cinematic background, trust copy, logo visual                 -->
+    <!-- ============================================================================ -->
+    <section data-section="hero" class="grain">
+      <div class="mx-auto max-w-7xl px-4 py-10 md:px-8 lg:px-12 lg:py-16">
+        <div class="grid items-center gap-10 lg:grid-cols-2">
+          <div class="max-w-2xl">
+            <span class="inline-flex rounded-full border border-[#F59E0B]/30 bg-[#F59E0B]/10 px-4 py-2 text-sm font-semibold text-orange-300">Upstate NY's rugged pest control crew</span>
+            <h1 class="mt-5 text-4xl font-black leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+              Pests Don't Stand a Chance Against Sasquatch
+            </h1>
+            <p class="mt-5 max-w-xl text-lg leading-8 text-zinc-300">
+              Full-service pest control for homes and businesses across Upstate New York—fast response, proven treatments, and a team that shows up ready to work.
+            </p>
+            <div class="mt-8 flex flex-col sm:flex-row gap-4">
+              <a href="contact.html" class="inline-flex items-center justify-center rounded-full bg-[#F59E0B] px-7 py-4 text-base font-extrabold text-[#111] hover:bg-orange-400 transition shadow-lg">Get Your FREE Estimate</a>
+              <a href="services.html" class="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/5 px-7 py-4 text-base font-bold text-white hover:bg-white/10 transition">Explore Services</a>
+            </div>
+            <div class="mt-8 grid gap-4 sm:grid-cols-3 text-sm">
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <p class="font-bold text-orange-300">24-Hour Response</p>
+                <p class="mt-1 text-zinc-400">Fast help when pests can’t wait.</p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <p class="font-bold text-orange-300">Eco-Friendly Options</p>
+                <p class="mt-1 text-zinc-400">Smart solutions with family safety in mind.</p>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                <p class="font-bold text-orange-300">Licensed & Insured</p>
+                <p class="mt-1 text-zinc-400">Professional service you can trust.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative">
+            <div class="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-[#2d5a27]/35 via-transparent to-[#F59E0B]/20 blur-2xl"></div>
+            <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-[#151515] section-card">
+              <div class="grid gap-0 md:grid-cols-2">
+                <div class="p-8 md:p-10 flex flex-col justify-center">
+                  <p class="text-sm uppercase tracking-[.3em] text-zinc-400">Logo concept</p>
+                  <h2 class="mt-3 text-3xl font-black text-white">Bigfoot on the job.</h2>
+                  <p class="mt-4 text-zinc-300">
+                    A bold Sasquatch holding a fly swatter and spray bottle—built to communicate strength, reliability, and no-nonsense results.
+                  </p>
+                  <div class="mt-6 flex flex-wrap gap-3">
+                    <span class="rounded-full bg-[#2d5a27]/20 px-4 py-2 text-sm font-semibold text-emerald-200">Bigfoot</span>
+                    <span class="rounded-full bg-[#F59E0B]/15 px-4 py-2 text-sm font-semibold text-orange-200">Fly Swatter</span>
+                    <span class="rounded-full bg-white/10 px-4 py-2 text-sm font-semibold text-zinc-200">Spray Bottle</span>
+                  </div>
+                </div>
+                <div class="min-h-[320px] bg-gradient-to-br from-[#1f1f1f] to-[#0f0f0f] p-8 flex items-center justify-center">
+                  <div class="relative h-64 w-64 rounded-full border-4 border-[#F59E0B]/30 bg-[#111] shadow-2xl flex items-center justify-center">
+                    <div class="absolute inset-5 rounded-full border border-white/10"></div>
+                    <div class="text-center">
+                      <div class="text-7xl leading-none">🦶</div>
+                      <div class="mt-4 text-4xl">🪰</div>
+                      <div class="mt-3 text-4xl">🧴</div>
+                      <p class="mt-4 text-xs uppercase tracking-[.35em] text-zinc-400">Sasquatch Pest Control</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- WHY CHOOSE US: Trust-building benefits in a rugged, easy-to-scan layout     -->
+    <!-- ============================================================================ -->
+    <section data-section="why-choose-us" class="mx-auto max-w-7xl px-4 py-6 md:px-8 lg:px-12 lg:py-10">
+      <div class="rounded-[2rem] border border-white/10 bg-white/5 p-6 md:p-8 section-card">
+        <h2 class="text-3xl font-black text-white">Why Upstate NY Chooses Sasquatch</h2>
+        <div class="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+          <article class="rounded-2xl border border-white/10 bg-[#111]/70 p-5">
+            <h3 class="font-bold text-orange-300">Licensed & Insured</h3>
+            <p class="mt-2 text-sm text-zinc-400">Professional-grade service with accountability on every job.</p>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-[#111]/70 p-5">
+            <h3 class="font-bold text-orange-300">Eco-Friendly Options</h3>
+            <p class="mt-2 text-sm text-zinc-400">Effective treatments designed to be tough on pests, not your space.</p>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-[#111]/70 p-5">
+            <h3 class="font-bold text-orange-300">24-Hour Response</h3>
+            <p class="mt-2 text-sm text-zinc-400">Rapid scheduling for urgent infestations and repeat problems.</p>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-[#111]/70 p-5">
+            <h3 class="font-bold text-orange-300">Locally Owned & Operated</h3>
+            <p class="mt-2 text-sm text-zinc-400">We know the pests, seasons, and properties that define Upstate New York.</p>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-[#111]/70 p-5">
+            <h3 class="font-bold text-orange-300">Satisfaction Guaranteed</h3>
+            <p class="mt-2 text-sm text-zinc-400">Clear communication, dependable follow-through, and results that last.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- SERVICES PREVIEW: High-converting service cards with emoji icons             -->
+    <!-- ============================================================================ -->
+    <section data-section="services-preview" class="mx-auto max-w-7xl px-4 py-10 md:px-8 lg:px-12">
+      <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+        <div>
+          <h2 class="text-3xl font-black text-white">Services Built for Real-World Pest Pressure</h2>
+          <p class="mt-3 max-w-2xl text-zinc-300">From one-time removal to ongoing prevention, our team handles the most stubborn pest issues with a heavy-duty approach.</p>
+        </div>
+        <a href="services.html" class="inline-flex w-fit rounded-full border border-[#F59E0B]/30 bg-[#F59E0B]/10 px-5 py-3 font-bold text-orange-300 hover:bg-[#F59E0B]/15 transition">View All Services</a>
+      </div>
+
+      <div class="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
+        <article class="rounded-3xl border border-white/10 bg-[#111]/75 p-6 section-card">
+          <div class="text-4xl">🐜</div><h3 class="mt-4 text-xl font-bold text-white">Ant Control</h3><p class="mt-2 text-zinc-400">Stop carpenter ants, pavement ants, and kitchen invaders before they turn into a bigger problem.</p>
+        </article>
+        <article class="rounded-3xl border border-white/10 bg-[#111]/75 p-6 section-card">
+          <div class="text-4xl">🐭</div><h3 class="mt-4 text-xl font-bold text-white">Rodent Control</h3><p class="mt-2 text-zinc-400">Seal, trap, and prevent mice and rats from getting comfortable in walls, attics, and garages.</p>
+        </article>
+        <article class="rounded-3xl border border-white/10 bg-[#111]/75 p-6 section-card">
+          <div class="text-4xl">🛏️</div><h3 class="mt-4 text-xl font-bold text-white">Bed Bugs</h3><p class="mt-2 text-zinc-400">Targeted treatment plans for fast-moving infestations that demand a thorough, disciplined response.</p>
+        </article>
+        <article class="rounded-3xl border border-white/10 bg-[#111]/75 p-6 section-card">
+          <div class="text-4xl">🦟</div><h3 class="mt-4 text-xl font-bold text-white">Mosquito Control</h3><p class="mt-2 text-zinc-400">Reduce bites and reclaim your yard with seasonal treatments that help knock down breeding hotspots.</p>
+        </article>
+        <article class="rounded-3xl border border-white/10 bg-[#111]/75 p-6 section-card">
+          <div class="text-4xl">🪵</div><h3 class="mt-4 text-xl font-bold text-white">Termite Treatment</h3><p class="mt-2 text-zinc-400">Protect wooden structures with inspection-backed treatment strategies and prevention planning.</p>
+        </article>
+        <article class="rounded-3xl border border-white/10 bg-[#111]/75 p-6 section-card">
+          <div class="text-4xl">🦝</div><h3 class="mt-4 text-xl font-bold text-white">Wildlife Removal</h3><p class="mt-2 text-zinc-400">Responsible removal solutions for raccoons, squirrels, skunks, and other unwanted visitors.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- TESTIMONIALS: Social proof from realistic Upstate NY customers               -->
+    <!-- ============================================================================ -->
+    <section data-section="testimonials" class="mx-auto max-w-7xl px-4 py-10 md:px-8 lg:px-12">
+      <div class="rounded-[2rem] border border-white/10 bg-white/5 p-6 md:p-8 section-card">
+        <h2 class="text-3xl font-black text-white">What Customers Are Saying</h2>
+        <div class="mt-6 grid gap-5 lg:grid-cols-3">
+          <article class="rounded-3xl border border-white/10 bg-[#111]/80 p-6">
+            <p class="text-orange-300">★★★★★</p>
+            <p class="mt-4 text-zinc-300">“We had mice in our Saratoga home and Sasquatch came out the next day. They explained everything clearly, sealed the entry points, and the problem was gone.”</p>
+            <p class="mt-4 text-sm font-semibold text-white">— Melissa R., Saratoga Springs</p>
+          </article>
+          <article class="rounded-3xl border border-white/10 bg-[#111]/80 p-6">
+            <p class="text-orange-300">★★★★★</p>
+            <p class="mt-4 text-zinc-300">“Our backyard in Albany was unusable because of mosquitoes. Their seasonal treatment made a huge difference and the crew was professional from start to finish.”</p>
+            <p class="mt-4 text-sm font-semibold text-white">— James T., Albany</p>
+          </article>
+          <article class="rounded-3xl border border-white/10 bg-[#111]/80 p-6">
+            <p class="text-orange-300">★★★★★</p>
+            <p class="mt-4 text-zinc-300">“We found bed bugs in our Utica rental. Sasquatch moved fast, treated the property, and gave us a plan to prevent a repeat. Excellent service.”</p>
+            <p class="mt-4 text-sm font-semibold text-white">— Denise K., Utica</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- COMMON PESTS TEASER: Education-focused preview with internal navigation      -->
+    <!-- ============================================================================ -->
+    <section data-section="common-pests-teaser" class="mx-auto max-w-7xl px-4 py-10 md:px-8 lg:px-12">
+      <div class="grid gap-6 lg:grid-cols-2 lg:items-center">
+        <div>
+          <h2 class="text-3xl font-black text-white">Common Upstate NY Pests We Handle</h2>
+          <p class="mt-4 max-w-xl text-zinc-300">
+            Seasonal weather, wooded properties, older homes, and damp basements create the perfect setup for recurring pest problems across Upstate New York.
+          </p>
+        </div>
+        <div class="rounded-[2rem] border border-[#F59E0B]/20 bg-[#111]/80 p-6 section-card">
+          <div class="flex flex-wrap gap-3 text-sm">
+            <span class="rounded-full bg-white/10 px-4 py-2 text-zinc-200">Ants</span>
+            <span class="rounded-full bg-white/10 px-4 py-2 text-zinc-200">Mice</span>
+            <span class="rounded-full bg-white/10 px-4 py-2 text-zinc-200">Spiders</span>
+            <span class="rounded-full bg-white/10 px-4 py-2 text-zinc-200">Bed Bugs</span>
+            <span class="rounded-full bg-white/10 px-4 py-2 text-zinc-200">Wasps</span>
+            <span class="rounded-full bg-white/10 px-4 py-2 text-zinc-200">Ticks</span>
+            <span class="rounded-full bg-white/10 px-4 py-2 text-zinc-200">Mosquitoes</span>
+            <span class="rounded-full bg-white/10 px-4 py-2 text-zinc-200">Raccoons</span>
+          </div>
+          <p class="mt-5 text-zinc-300">Want a deeper breakdown of what shows up in our region and how to spot the warning signs?</p>
+          <a href="pests.html" class="mt-5 inline-flex rounded-full bg-[#2d5a27] px-6 py-3 font-bold text-white hover:bg-emerald-700 transition">See Common Pests</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- CTA STRIP: Reinforces action before footer                                   -->
+    <!-- ============================================================================ -->
+    <section data-section="cta" class="mx-auto max-w-7xl px-4 py-6 md:px-8 lg:px-12">
+      <div class="rounded-[2rem] border border-white/10 bg-gradient-to-r from-[#2d5a27] to-[#1a1a1a] p-8 md:p-10 section-card">
+        <div class="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
+          <div>
+            <h2 class="text-3xl font-black text-white">Ready to kick pests out for good?</h2>
+            <p class="mt-3 max-w-2xl text-zinc-200">Call on the rugged local crew that knows Upstate New York homes, seasons, and pest pressure better than anyone.</p>
+          </div>
+          <a href="contact.html" class="inline-flex items-center justify-center rounded-full bg-[#F59E0B] px-7 py-4 font-extrabold text-[#111] hover:bg-orange-400 transition">Get Your FREE Estimate</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================================ -->
+  <!-- FOOTER: Contact details, social link, service area, and copyright             -->
+  <!-- ============================================================================ -->
+  <footer data-section="footer" class="border-t border-white/10 bg-[#111]">
+    <div class="mx-auto max-w-7xl px-4 py-10 md:px-8 lg:px-12">
+      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <h2 class="text-lg font-black text-white">Sasquatch Pest Control</h2>
+          <p class="mt-3 text-zinc-400">Bold pest protection for homes and businesses across Upstate New York.</p>
+        </div>
+        <div>
+          <h3 class="font-bold text-orange-300">Pages</h3>
+          <ul class="mt-3 space-y-2 text-zinc-400">
+            <li><a class="hover:text-white transition" href="index.html">Home</a></li>
+            <li><a class="hover:text-white transition" href="services.html">Services</a></li>
+            <li><a class="hover:text-white transition" href="pests.html">Common Pests (Upstate NY)</a></li>
+            <li><a class="hover:text-white transition" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-orange-300">Contact</h3>
+          <ul class="mt-3 space-y-2 text-zinc-400">
+            <li>Phone: (555) 555-0199</li>
+            <li>Email: hello@sasquatchpestcontrol.com</li>
+            <li><a class="hover:text-white transition" href="https://www.facebook.com/profile.php?id=61579327053844" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-orange-300">Service Area</h3>
+          <p class="mt-3 text-zinc-400">Upstate New York</p>
+          <p class="mt-4 text-xs uppercase tracking-[.3em] text-zinc-500">Licensed • Insured • Local</p>
+        </div>
+      </div>
+      <div class="mt-10 border-t border-white/10 pt-6 text-sm text-zinc-500 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+        <p>Copyright Sasquatch Pest Control 2026</p>
+        <p>Built for serious pest problems, rugged weather, and tough New York properties.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
