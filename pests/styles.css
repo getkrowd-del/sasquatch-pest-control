@@ -1,0 +1,8 @@
+/* ===== BRAND THEME STYLES ===== */
+    /* Rugged, educational, high-contrast look using the Sasquatch Pest Control palette */
+    :root { --charcoal:#1a1a1a; --orange:#F59E0B; --green:#2d5a27; }
+    body { background: #0f0f0f; color: #f3f4f6; }
+    .brand-charcoal { background: var(--charcoal); }
+    .brand-orange { color: var(--orange); }
+    .brand-green { color: var(--green); }
+    .card-shadow { box-shadow: 0 12px 30px rgba(0,0,0,.28); }
