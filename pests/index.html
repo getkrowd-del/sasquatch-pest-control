@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- BASE:START (managed by Coding Agent — do not edit) -->
+<base href="/sasquatch-pest-control/pests/">
+<!-- BASE:END -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://paymegpt.com/widget.js" data-widget="32575097" async></script>
+  
+
+<!-- SEO Meta Tags -->
+<title>Common Pests in Upstate New York | Sasquatch Pest Control</title>
+<meta name="description" content="An educational Upstate New York pest guide with detailed profiles, seasonal insights, and free inspection calls to action from Sasquatch Pest Control." />
+<meta property="og:title" content="Common Pests in Upstate New York | Sasquatch Pest Control" />
+<meta property="og:description" content="An educational Upstate New York pest guide with detailed profiles, seasonal insights, and free inspection calls to action from Sasquatch Pest Control." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Common Pests in Upstate New York | Sasquatch Pest Control" />
+<meta name="twitter:description" content="An educational Upstate New York pest guide with detailed profiles, seasonal insights, and free inspection calls to action from Sasquatch Pest Control." />
+<!-- End SEO Meta Tags -->
+
+<script data-field-replace>
+(function(){
+  var params=new URLSearchParams(window.location.search);
+  var fields={};
+  var paramMap={
+    'first_name':'firstName','last_name':'lastName','full_name':'fullName',
+    'email':'email','phone':'phone','company':'company',
+    'city':'city','state':'state','country':'country'
+  };
+  var skipTags={'SCRIPT':1,'STYLE':1,'NOSCRIPT':1,'TEXTAREA':1,'CODE':1,'PRE':1};
+  var hasUrlFields=false;
+  for(var p in paramMap){
+    var v=params.get(p);
+    if(v){fields[paramMap[p]]=v;hasUrlFields=true;}
+  }
+  var contactId=params.get('contact_id');
+  function esc(s){
+    if(!s)return s;
+    var d=document.createElement('div');
+    d.appendChild(document.createTextNode(s));
+    return d.innerHTML;
+  }
+  function doReplace(data){
+    var r={};
+    r['{{full_name}}']=esc(((data.firstName||'')+' '+(data.lastName||'')).trim()||((data.fullName||data.name)||''));
+    r['{{first_name}}']=esc(data.firstName||(data.name?data.name.split(' ')[0]:'')||'');
+    r['{{last_name}}']=esc(data.lastName||(data.name&&data.name.indexOf(' ')>-1?data.name.substring(data.name.indexOf(' ')+1):'')||'');
+    r['{{email}}']=esc(data.email||'');
+    r['{{phone}}']=esc(data.phone||'');
+    r['{{company}}']=esc(data.company||'');
+    r['{{city}}']=esc(data.city||'');
+    r['{{state}}']=esc(data.state||'');
+    r['{{country}}']=esc(data.country||'');
+    r['{{date}}']=new Date().toLocaleDateString();
+    r['{{time}}']=new Date().toLocaleTimeString();
+    r['{{location}}']=[data.city,data.state,data.country].filter(Boolean).join(', ');
+    r['{{tracking_id}}']=esc(data.trackingId||'');
+    r['{{lastClickedProduct}}']=esc(data.lastClickedProduct||'');
+    r['{{lastProductClickDate}}']=esc(data.lastProductClickDate||'');
+    r['{{lastClickedProductPrice}}']=esc(data.lastClickedProductPrice||'');
+    r['{{lastClickedProductURL}}']=esc(data.lastClickedProductURL||'');
+    r['{{productsClickedCount}}']=esc(data.productsClickedCount||'0');
+    r['{{ip_address}}']=esc(data.ipAddress||'');
+    r['{{ip}}']=esc(data.ipAddress||'');
+    if(data.customFields){
+      for(var k in data.customFields){
+        r['{{'+k+'}}']=esc(String(data.customFields[k]||''));
+      }
+    }
+    params.forEach(function(v,k){
+      if(!paramMap[k]&&k!=='contact_id'&&k!=='page_id'&&k.indexOf('utm_')!==0){
+        r['{{'+k+'}}']=esc(v);
+      }
+    });
+    var hasValues=false;
+    for(var key in r){if(r[key]){hasValues=true;break;}}
+    if(!hasValues)return;
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{
+      acceptNode:function(n){
+        var p=n.parentNode;
+        if(p&&skipTags[p.nodeName])return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var node;
+    while(node=walker.nextNode()){
+      var txt=node.nodeValue;
+      if(txt&&txt.indexOf('{{')>-1){
+        var changed=txt;
+        for(var ph in r){
+          if(r[ph]&&changed.indexOf(ph)>-1){
+            changed=changed.split(ph).join(r[ph]);
+          }
+        }
+        if(changed!==txt)node.nodeValue=changed;
+      }
+    }
+    var attrs=['value','placeholder','content','alt','title'];
+    attrs.forEach(function(attr){
+      var els=document.querySelectorAll('['+attr+'*="{{"]');
+      for(var i=0;i<els.length;i++){
+        var tag=els[i].tagName;
+        if(skipTags[tag])continue;
+        var val=els[i].getAttribute(attr);
+        if(val){
+          var nv=val;
+          for(var ph in r){
+            if(r[ph]&&nv.indexOf(ph)>-1){
+              nv=nv.split(ph).join(r[ph]);
+            }
+          }
+          if(nv!==val)els[i].setAttribute(attr,nv);
+        }
+      }
+    });
+  }
+  function run(){
+    if(contactId){
+      var xhr=new XMLHttpRequest();
+      xhr.open('GET','https://paymegpt.com/api/landing/context/'+encodeURIComponent(contactId)+'?page_id=4331');
+      xhr.onload=function(){
+        if(xhr.status===200){
+          try{
+            var resp=JSON.parse(xhr.responseText);
+            if(resp.success&&resp.contact){
+              var merged=resp.contact;
+              for(var k in fields){merged[k]=fields[k];}
+              doReplace(merged);
+              return;
+            }
+          }catch(e){}
+        }
+        if(hasUrlFields)doReplace(fields);
+      };
+      xhr.onerror=function(){if(hasUrlFields)doReplace(fields);};
+      xhr.send();
+    }else if(hasUrlFields){
+      doReplace(fields);
+    }
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',run);}
+  else{run();}
+})();
+</script>
+<script data-payment>
+(function(){
+  var slug='xhGXNUmGW5';
+  var apiBase='https://paymegpt.com';
+  var successSubtext='';var successBtnLabel='Continue';var successBtnColor='#16a34a';var successRedirect='';
+  function findEmail(){
+    var ids=['email','emailAddress','buyer-email','buyerEmail','user-email','userEmail','checkout-email','customer-email','contact-email'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value&&el.value.includes('@'))return el.value.trim();}
+    var inputs=document.querySelectorAll('input[type="email"],input[name*="email"],input[placeholder*="email"],input[placeholder*="Email"]');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value&&inputs[j].value.includes('@'))return inputs[j].value.trim();}
+    return '';
+  }
+  function findName(){
+    var ids=['name','fullName','full-name','buyer-name','buyerName','customer-name','userName','user-name'];
+    for(var i=0;i<ids.length;i++){var el=document.getElementById(ids[i]);if(el&&el.value)return el.value.trim();}
+    var inputs=document.querySelectorAll('input[name*="name"]:not([name*="email"]):not([type="email"]),input[placeholder*="name"]:not([placeholder*="email"]):not([type="email"]),input[placeholder*="Name"]:not([type="email"])');
+    for(var j=0;j<inputs.length;j++){if(inputs[j].value)return inputs[j].value.trim();}
+    return '';
+  }
+  var __realProcessPayment=function(a,b,c,d,e){
+    var amountCents,email,productName,productDescription,customerName,quantity;
+    if(a&&typeof a==='object'){
+      amountCents=a.amountCents;email=a.email;productName=a.productName;
+      productDescription=a.productDescription||'';customerName=a.name||'';quantity=a.quantity||1;
+    }else{
+      amountCents=typeof a==='number'?a:0;productName=typeof b==='string'?b:'';
+      productDescription=typeof c==='string'?c:'';email='';customerName='';quantity=1;
+    }
+    if(!email)email=findEmail();
+    if(!customerName)customerName=findName();
+    if(!productName){alert('Product name is required.');return Promise.reject('no_product_name');}
+    if(!amountCents||amountCents<100){alert('Amount must be at least $1.00');return Promise.reject('invalid_amount');}
+    if(!email){alert('Please enter your email address.');return Promise.reject('no_email');}
+    var successBase=window.location.href.split('?')[0];
+    var __pLoc=(document.documentElement.lang||navigator.language||'en');
+    return fetch(apiBase+'/api/landing-pages/public/'+slug+'/payment/checkout',{
+      method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({email:email,name:customerName,amountCents:amountCents,productName:productName,productDescription:productDescription,quantity:quantity,locale:__pLoc,successUrl:successBase+'?payment=success&product='+encodeURIComponent(productName)+'&session_id={CHECKOUT_SESSION_ID}',cancelUrl:successBase+'?payment=cancelled'})
+    }).then(function(r){return r.json();}).then(function(d){
+      if(d.checkoutUrl){window.location.href=d.checkoutUrl;}
+      else{alert(d.error||'Failed to process payment');throw new Error(d.error);}
+    });
+  };
+  Object.defineProperty(window,'__processPayment',{value:__realProcessPayment,writable:false,configurable:false});
+  document.addEventListener('DOMContentLoaded',function(){
+    var urlParams=new URLSearchParams(window.location.search);
+    if(urlParams.get('payment')==='success'){
+      var pName=urlParams.get('product')||'your item';
+      var overlay=document.createElement('div');overlay.id='payment-success-overlay';
+      overlay.style.cssText='position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:999999;font-family:system-ui,-apple-system,sans-serif;';
+      function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+      var subTxt=successSubtext||('Thank you for purchasing '+pName+'.');
+      overlay.innerHTML='<div style="background:white;border-radius:16px;padding:40px;max-width:420px;width:90%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.15);"><div style="width:64px;height:64px;border-radius:50%;background:#dcfce7;margin:0 auto 20px;display:flex;align-items:center;justify-content:center;"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></div><h2 style="margin:0 0 12px;font-size:24px;font-weight:700;color:#111827;">Payment Successful!</h2><p style="margin:0 0 24px;color:#6b7280;font-size:16px;">'+esc(subTxt)+'</p><button id="lp-pay-success-btn" style="padding:12px 32px;font-size:16px;font-weight:600;background:'+successBtnColor+';color:white;border:none;border-radius:8px;cursor:pointer;">'+esc(successBtnLabel)+'</button></div>';
+      document.body.appendChild(overlay);
+      var pBtn=document.getElementById('lp-pay-success-btn');
+      if(pBtn){pBtn.addEventListener('click',function(){if(successRedirect){window.location.href=successRedirect;}else{overlay.remove();window.history.replaceState({},'',window.location.pathname);}});}
+    }
+  });
+})();
+</script>  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="antialiased">
+  <!-- ============================================================================ -->
+  <!-- NAVIGATION: Site-wide links for quick access                                -->
+  <!-- Includes only pages that exist in this deployment                           -->
+  <!-- ============================================================================ -->
+  <nav data-section="navbar" class="sticky top-0 z-50 border-b border-white/10 bg-[#1a1a1a]/95 backdrop-blur">
+    <div class="mx-auto max-w-7xl px-4 py-4 md:px-8 lg:px-12">
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <a href="index.html" class="flex items-center gap-3 font-black tracking-wide text-white">
+          <span class="grid h-11 w-11 place-items-center rounded-full bg-[#F59E0B] text-[#1a1a1a]">S</span>
+          <span>Sasquatch Pest Control</span>
+        </a>
+        <div class="flex flex-wrap gap-2 text-sm font-semibold">
+          <a href="index.html" class="rounded-full border border-white/15 px-4 py-2 text-white transition hover:border-[#F59E0B] hover:text-[#F59E0B]">Home</a>
+          <a href="services.html" class="rounded-full border border-white/15 px-4 py-2 text-white transition hover:border-[#F59E0B] hover:text-[#F59E0B]">Services</a>
+          <a href="pests.html" class="rounded-full border border-[#F59E0B] bg-[#F59E0B] px-4 py-2 text-[#1a1a1a]">Pests</a>
+          <a href="contact.html" class="rounded-full border border-white/15 px-4 py-2 text-white transition hover:border-[#F59E0B] hover:text-[#F59E0B]">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ============================================================================ -->
+    <!-- HERO SECTION: Main educational lead-in                                      -->
+    <!-- Features: Strong headline, regional context, primary CTA                    -->
+    <!-- Mobile Padding: Keeps headline safe on small screens                        -->
+    <!-- ============================================================================ -->
+    <section data-section="hero" class="hero-section border-b border-white/10 bg-gradient-to-br from-[#1a1a1a] via-[#132015] to-[#0f0f0f]">
+      <div class="mx-auto max-w-7xl px-4 py-14 md:px-8 md:py-20 lg:px-12">
+        <div class="grid items-center gap-10 lg:grid-cols-2">
+          <div>
+            <p class="mb-4 inline-flex rounded-full border border-[#F59E0B]/30 bg-[#F59E0B]/10 px-4 py-2 text-sm font-bold uppercase tracking-widest text-[#F59E0B]">Upstate NY pest guide</p>
+            <h1 class="max-w-3xl text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">Know Your Enemy: Common Pests in Upstate NY</h1>
+            <p class="mt-5 max-w-2xl text-lg leading-8 text-gray-300">
+              Upstate New York’s unique climate, forests, farms, older homes, and dramatic seasons make it prime territory for a wide variety of pests. From spring ant invasions to winter mice, knowing what you’re seeing is the first step to protecting your home.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a href="contact.html" class="rounded-full bg-[#F59E0B] px-6 py-3 font-bold text-[#1a1a1a] transition hover:bg-amber-400">Request a Free Inspection</a>
+              <a href="#pest-guide" class="rounded-full border border-white/20 px-6 py-3 font-bold text-white transition hover:border-[#F59E0B] hover:text-[#F59E0B]">Browse Pest Profiles</a>
+            </div>
+          </div>
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-6 card-shadow">
+            <div class="grid grid-cols-2 gap-4 text-sm">
+              <div class="rounded-2xl bg-black/20 p-4">
+                <p class="text-gray-400">Common risk zones</p>
+                <p class="mt-2 text-xl font-black text-white">Homes, attics, basements, barns, sheds</p>
+              </div>
+              <div class="rounded-2xl bg-black/20 p-4">
+                <p class="text-gray-400">Best defense</p>
+                <p class="mt-2 text-xl font-black text-white">Fast identification + targeted treatment</p>
+              </div>
+              <div class="rounded-2xl bg-black/20 p-4">
+                <p class="text-gray-400">Biggest seasonal spike</p>
+                <p class="mt-2 text-xl font-black text-white">Fall invasions &amp; winter overwintering</p>
+              </div>
+              <div class="rounded-2xl bg-black/20 p-4">
+                <p class="text-gray-400">Local reality</p>
+                <p class="mt-2 text-xl font-black text-white">Rural, suburban, and wooded properties all face pressure</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- QUICK FACTS SECTION: Why Upstate NY attracts pests                          -->
+    <!-- ============================================================================ -->
+    <section data-section="quick-facts" class="border-b border-white/10 bg-[#111111]">
+      <div class="mx-auto max-w-7xl px-4 py-10 md:px-8 lg:px-12">
+        <div class="grid gap-4 md:grid-cols-3">
+          <article class="rounded-2xl border border-white/10 bg-white/5 p-5">
+            <h2 class="text-xl font-bold text-white">Seasonal swings</h2>
+            <p class="mt-2 text-gray-300">Cold winters push rodents, cluster flies, and overwintering insects indoors. Warm months bring ants, ticks, stinging insects, and spiders.</p>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-white/5 p-5">
+            <h2 class="text-xl font-bold text-white">Forests and fields</h2>
+            <p class="mt-2 text-gray-300">Wooded edges and rural landscapes create ideal habitat for mice, ticks, raccoons, skunks, and termites near structures.</p>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-white/5 p-5">
+            <h2 class="text-xl font-bold text-white">Older homes</h2>
+            <p class="mt-2 text-gray-300">Cracks, voids, crawlspaces, and aging wood give pests easy access and hidden places to nest, feed, and spread.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- PEST GUIDE SECTION: Detailed pest profiles                                  -->
+    <!-- Each card includes appearance, habitat, problem, signs, season, CTA        -->
+    <!-- ============================================================================ -->
+    <section data-section="pest-guide" class="bg-[#0f0f0f]">
+      <div class="mx-auto max-w-7xl px-4 py-14 md:px-8 lg:px-12">
+        <div class="max-w-3xl">
+          <h2 class="text-3xl font-black text-white sm:text-4xl">Detailed Pest Profiles for Upstate New York</h2>
+          <p class="mt-4 text-gray-300">Use these field notes to identify the pest, understand the risk, and decide when it’s time to call in professional help.</p>
+        </div>
+
+        <div class="mt-10 grid gap-6 lg:grid-cols-2">
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6 card-shadow">
+            <h3 class="text-2xl font-black text-white">🐜 Carpenter Ants</h3>
+            <p class="mt-3 text-gray-300"><strong class="text-white">What it looks like:</strong> Large black ants, often 1/4" to 1/2" long.<br><strong class="text-white">Where found:</strong> Damp or softened wood, wall voids, decks, window trim, and structural framing.<br><strong class="text-white">Why it’s a problem:</strong> They tunnel through wood and can weaken structures over time.<br><strong class="text-white">Signs of infestation:</strong> Sawdust-like frass, rustling in walls, winged ants, and trails near moisture.<br><strong class="text-white">Peak season in Upstate NY:</strong> Spring and summer.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-[#F59E0B] px-5 py-3 font-bold text-[#1a1a1a]">Get Help With This Pest</a>
+          </article>
+
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6 card-shadow">
+            <h3 class="text-2xl font-black text-white">🐭 White-Footed Mouse</h3>
+            <p class="mt-3 text-gray-300"><strong class="text-white">What it looks like:</strong> Small brown mouse with white feet and underbelly.<br><strong class="text-white">Where found:</strong> Rural properties, sheds, garages, brush piles, and wooded edge homes.<br><strong class="text-white">Why it’s a problem:</strong> Contaminates food, damages insulation and wiring, and can support tick spread associated with Lyme risk.<br><strong class="text-white">Signs of infestation:</strong> Droppings, gnaw marks, scratching sounds, nest material, and chewed packaging.<br><strong class="text-white">Peak season in Upstate NY:</strong> Fall when seeking warmth.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-[#F59E0B] px-5 py-3 font-bold text-[#1a1a1a]">Get Help With This Pest</a>
+          </article>
+
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6 card-shadow">
+            <h3 class="text-2xl font-black text-white">🦟 Deer Tick / Black-Legged Tick</h3>
+            <p class="mt-3 text-gray-300"><strong class="text-white">What it looks like:</strong> Tiny dark tick; adults and nymphs are hard to spot.<br><strong class="text-white">Where found:</strong> Forests, brush, tall grass, landscaping edges, and suburban backyards.<br><strong class="text-white">Why it’s a problem:</strong> Major Lyme disease vector in Upstate New York.<br><strong class="text-white">Signs of infestation:</strong> Ticks on pets, clothing, or skin; frequent bites after outdoor activity.<br><strong class="text-white">Peak season in Upstate NY:</strong> Spring through fall.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-[#F59E0B] px-5 py-3 font-bold text-[#1a1a1a]">Get Help With This Pest</a>
+          </article>
+
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6 card-shadow">
+            <h3 class="text-2xl font-black text-white">🪲 Brown Marmorated Stink Bug</h3>
+            <p class="mt-3 text-gray-300"><strong class="text-white">What it looks like:</strong> Shield-shaped brown bug with mottled markings and a stink defense.<br><strong class="text-white">Where found:</strong> Sunlit walls, windows, attics, and indoor hiding spots in the fall.<br><strong class="text-white">Why it’s a problem:</strong> Overwinters indoors and becomes a nuisance in large numbers.<br><strong class="text-white">Signs of infestation:</strong> Clustered bugs on sunny walls, buzzing in windows, and odor when disturbed.<br><strong class="text-white">Peak season in Upstate NY:</strong> Fall.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-[#F59E0B] px-5 py-3 font-bold text-[#1a1a1a]">Get Help With This Pest</a>
+          </article>
+
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6 card-shadow">
+            <h3 class="text-2xl font-black text-white">🐝 Yellowjackets &amp; Bald-Faced Hornets</h3>
+            <p class="mt-3 text-gray-300"><strong class="text-white">What it looks like:</strong> Yellow-and-black wasps; hornets are black-and-white with large paper nests.<br><strong class="text-white">Where found:</strong> Ground nests, wall voids, eaves, trees, and shrubs.<br><strong class="text-white">Why it’s a problem:</strong> Aggressive defenders that can sting repeatedly and threaten families, pets, and workers.<br><strong class="text-white">Signs of infestation:</strong> Heavy insect traffic near a nest, buzzing in walls, visible paper nest, or wasps around food.<br><strong class="text-white">Peak season in Upstate NY:</strong> Late summer.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-[#F59E0B] px-5 py-3 font-bold text-[#1a1a1a]">Get Help With This Pest</a>
+          </article>
+
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6 card-shadow">
+            <h3 class="text-2xl font-black text-white">🕷️ Wolf Spider</h3>
+            <p class="mt-3 text-gray-300"><strong class="text-white">What it looks like:</strong> Large, fast-moving spider with a hairy body and strong legs.<br><strong class="text-white">Where found:</strong> Basements, garages, sheds, crawlspaces, and occasionally living areas in fall.<br><strong class="text-white">Why it’s a problem:</strong> Alarming in appearance, though mostly harmless; finding many indoors may signal prey insects nearby.<br><strong class="text-white">Signs of infestation:</strong> Occasional large spiders at floor level, especially near doors, windows, and stored items.<br><strong class="text-white">Peak season in Upstate NY:</strong> Fall.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-[#F59E0B] px-5 py-3 font-bold text-[#1a1a1a]">Get Help With This Pest</a>
+          </article>
+
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6 card-shadow">
+            <h3 class="text-2xl font-black text-white">🪲 Spotted Lanternfly</h3>
+            <p class="mt-3 text-gray-300"><strong class="text-white">What it looks like:</strong> Distinct spotted wings, red underwings, and black-tipped body.<br><strong class="text-white">Where found:</strong> Trees, vines, outdoor structures, and high-traffic landscape areas.<br><strong class="text-white">Why it’s a problem:</strong> Invasive species that damages plants, trees, and outdoor spaces while spreading quickly.<br><strong class="text-white">Signs of infestation:</strong> Swarms on trees, sticky honeydew, sooty mold, and egg masses on surfaces.<br><strong class="text-white">Peak season in Upstate NY:</strong> Summer into fall.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-[#F59E0B] px-5 py-3 font-bold text-[#1a1a1a]">Get Help With This Pest</a>
+          </article>
+
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6 card-shadow">
+            <h3 class="text-2xl font-black text-white">🪳 German Cockroach</h3>
+            <p class="mt-3 text-gray-300"><strong class="text-white">What it looks like:</strong> Small tan-brown roach with two dark stripes behind the head.<br><strong class="text-white">Where found:</strong> Kitchens, restaurants, appliance gaps, cabinets, and warm moist voids.<br><strong class="text-white">Why it’s a problem:</strong> Breeds rapidly, contaminates surfaces, and spreads in multi-unit and food-service environments.<br><strong class="text-white">Signs of infestation:</strong> Droppings, egg cases, greasy smears, and live roaches at night.<br><strong class="text-white">Peak season in Upstate NY:</strong> Year-round indoors.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-[#F59E0B] px-5 py-3 font-bold text-[#1a1a1a]">Get Help With This Pest</a>
+          </article>
+
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6 card-shadow">
+            <h3 class="text-2xl font-black text-white">🦝 Raccoon</h3>
+            <p class="mt-3 text-gray-300"><strong class="text-white">What it looks like:</strong> Medium-sized mammal with a mask-like face and ringed tail.<br><strong class="text-white">Where found:</strong> Neighborhoods, attics, chimneys, sheds, garbage areas, and rooflines.<br><strong class="text-white">Why it’s a problem:</strong> Tearing into trash, damaging roofs, and nesting in attics can cause costly repairs and contamination.<br><strong class="text-white">Signs of infestation:</strong> Overturned trash, roof damage, scratching overhead, and raccoon droppings.<br><strong class="text-white">Peak season in Upstate NY:</strong> Spring through fall.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-[#F59E0B] px-5 py-3 font-bold text-[#1a1a1a]">Get Help With This Pest</a>
+          </article>
+
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6 card-shadow">
+            <h3 class="text-2xl font-black text-white">🐀 Norway Rat</h3>
+            <p class="mt-3 text-gray-300"><strong class="text-white">What it looks like:</strong> Large, heavy-bodied brown or gray rat with a blunt nose and scaly tail.<br><strong class="text-white">Where found:</strong> Near waterways, sewer lines, dumpsters, basements, and foundation gaps.<br><strong class="text-white">Why it’s a problem:</strong> Major structural and health pest that can chew wiring, contaminate food, and multiply quickly.<br><strong class="text-white">Signs of infestation:</strong> Large droppings, burrows, greasy rub marks, gnawing, and nighttime activity.<br><strong class="text-white">Peak season in Upstate NY:</strong> Fall and winter indoors.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-[#F59E0B] px-5 py-3 font-bold text-[#1a1a1a]">Get Help With This Pest</a>
+          </article>
+
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6 card-shadow">
+            <h3 class="text-2xl font-black text-white">🦟 Cluster Fly</h3>
+            <p class="mt-3 text-gray-300"><strong class="text-white">What it looks like:</strong> Slow-moving dark fly that gathers in large numbers on sunny walls and windows.<br><strong class="text-white">Where found:</strong> Attics, wall voids, rafters, and upper levels of rural homes and barns.<br><strong class="text-white">Why it’s a problem:</strong> They overwinter in walls, then emerge in huge groups on warm days.<br><strong class="text-white">Signs of infestation:</strong> Lazy flies at windows, buzzing in attics, and masses appearing indoors in winter.<br><strong class="text-white">Peak season in Upstate NY:</strong> Fall into winter.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-[#F59E0B] px-5 py-3 font-bold text-[#1a1a1a]">Get Help With This Pest</a>
+          </article>
+
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6 card-shadow">
+            <h3 class="text-2xl font-black text-white">🦨 Skunk</h3>
+            <p class="mt-3 text-gray-300"><strong class="text-white">What it looks like:</strong> Black fur with bold white stripes and a bushy tail.<br><strong class="text-white">Where found:</strong> Under porches, decks, sheds, and burrows near foundations.<br><strong class="text-white">Why it’s a problem:</strong> Digs under structures, smells up properties, and can carry rabies in the wild.<br><strong class="text-white">Signs of infestation:</strong> Cone-shaped lawn holes, odor, tracks, and burrow openings beneath buildings.<br><strong class="text-white">Peak season in Upstate NY:</strong> Spring and summer.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-[#F59E0B] px-5 py-3 font-bold text-[#1a1a1a]">Get Help With This Pest</a>
+          </article>
+
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6 card-shadow">
+            <h3 class="text-2xl font-black text-white">🐜 Odorous House Ant</h3>
+            <p class="mt-3 text-gray-300"><strong class="text-white">What it looks like:</strong> Tiny brown to black ants forming long trails.<br><strong class="text-white">Where found:</strong> Kitchens, sinks, pantries, moisture areas, and around foundations.<br><strong class="text-white">Why it’s a problem:</strong> Quickly establishes trails indoors and smells like coconut when crushed.<br><strong class="text-white">Signs of infestation:</strong> Ant lines to food or water, small gaps in baseboards, and repeated kitchen sightings.<br><strong class="text-white">Peak season in Upstate NY:</strong> Spring through summer.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-[#F59E0B] px-5 py-3 font-bold text-[#1a1a1a]">Get Help With This Pest</a>
+          </article>
+
+          <article class="rounded-3xl border border-white/10 bg-white/5 p-6 card-shadow">
+            <h3 class="text-2xl font-black text-white">🏠 Subterranean Termite</h3>
+            <p class="mt-3 text-gray-300"><strong class="text-white">What it looks like:</strong> Small pale termite that lives underground and feeds on wood from the inside out.<br><strong class="text-white">Where found:</strong> Foundation edges, crawlspaces, sill plates, and hidden wood in older homes.<br><strong class="text-white">Why it’s a problem:</strong> Silent wood destroyer that can cause serious structural damage before it’s noticed.<br><strong class="text-white">Signs of infestation:</strong> Mud tubes, soft wood, blistering paint, swarmers, and hollow-sounding beams.<br><strong class="text-white">Peak season in Upstate NY:</strong> Spring swarms and warm wet periods.</p>
+            <a href="contact.html" class="mt-5 inline-flex rounded-full bg-[#F59E0B] px-5 py-3 font-bold text-[#1a1a1a]">Get Help With This Pest</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- SEASONAL GUIDE SECTION: What to watch for throughout the year               -->
+    <!-- ============================================================================ -->
+    <section data-section="seasonal-guide" class="border-t border-white/10 bg-[#111111]">
+      <div class="mx-auto max-w-7xl px-4 py-14 md:px-8 lg:px-12">
+        <h2 class="text-3xl font-black text-white sm:text-4xl">Seasonal Pest Guide for Upstate NY</h2>
+        <div class="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          <article class="rounded-2xl border border-white/10 bg-white/5 p-5">
+            <h3 class="text-xl font-bold text-[#F59E0B]">Spring</h3>
+            <p class="mt-2 text-gray-300">Watch for carpenter ants, termite swarms, ticks, skunks, and active stinging insect nests building early.</p>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-white/5 p-5">
+            <h3 class="text-xl font-bold text-[#F59E0B]">Summer</h3>
+            <p class="mt-2 text-gray-300">Peak season for yellowjackets, hornets, ticks, ants, lanternflies, and outdoor wildlife pressure.</p>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-white/5 p-5">
+            <h3 class="text-xl font-bold text-[#F59E0B]">Fall</h3>
+            <p class="mt-2 text-gray-300">The big invasion season for mice, stink bugs, cluster flies, spiders, and raccoons seeking shelter.</p>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-white/5 p-5">
+            <h3 class="text-xl font-bold text-[#F59E0B]">Winter</h3>
+            <p class="mt-2 text-gray-300">Rodents, cluster flies, and cockroaches remain active indoors while other pests overwinter in walls and attics.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- EXPERT TIP SECTION: Simple prevention advice                               -->
+    <!-- ============================================================================ -->
+    <section data-section="expert-tips" class="bg-[#0f0f0f]">
+      <div class="mx-auto max-w-7xl px-4 py-14 md:px-8 lg:px-12">
+        <div class="grid gap-8 lg:grid-cols-3">
+          <div class="lg:col-span-2">
+            <h2 class="text-3xl font-black text-white sm:text-4xl">How to Reduce Pest Pressure Around Your Property</h2>
+            <p class="mt-4 max-w-3xl text-gray-300">A few smart habits can make your home far less attractive to pests common across Upstate New York.</p>
+            <ul class="mt-6 space-y-4 text-gray-300">
+              <li class="rounded-2xl border border-white/10 bg-white/5 p-4">Seal cracks, gaps, and utility penetrations around foundations, doors, and windows.</li>
+              <li class="rounded-2xl border border-white/10 bg-white/5 p-4">Keep firewood, leaf piles, and brush away from the home’s exterior.</li>
+              <li class="rounded-2xl border border-white/10 bg-white/5 p-4">Store food in sealed containers and clean crumbs, grease, and standing water quickly.</li>
+              <li class="rounded-2xl border border-white/10 bg-white/5 p-4">Trim back shrubs and manage moisture near basements, crawlspaces, and attics.</li>
+            </ul>
+          </div>
+          <aside class="rounded-3xl border border-[#F59E0B]/20 bg-[#F59E0B]/10 p-6">
+            <h3 class="text-2xl font-black text-white">Need a pro’s eyes on it?</h3>
+            <p class="mt-3 text-gray-200">Many pests hide in wall voids, attics, and crawlspaces long before you notice damage. A professional inspection can catch the problem early.</p>
+            <a href="contact.html" class="mt-6 inline-flex rounded-full bg-[#F59E0B] px-6 py-3 font-bold text-[#1a1a1a]">Schedule Inspection</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================================ -->
+    <!-- CTA SECTION: Strong conversion prompt at page bottom                        -->
+    <!-- ============================================================================ -->
+    <section data-section="cta" class="border-t border-white/10 bg-gradient-to-r from-[#2d5a27] to-[#1a1a1a]">
+      <div class="mx-auto max-w-7xl px-4 py-14 text-center md:px-8 lg:px-12">
+        <h2 class="text-3xl font-black text-white sm:text-4xl">Spotted one of these? Don't wait — call Sasquatch Pest Control for a FREE inspection!</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-gray-100/90">From insects to rodents and nuisance wildlife, our team knows the pests that thrive in Upstate New York and how to stop them fast.</p>
+        <a href="contact.html" class="mt-8 inline-flex rounded-full bg-[#F59E0B] px-8 py-4 text-lg font-black text-[#1a1a1a] transition hover:bg-amber-400">Get Your Free Inspection</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================================ -->
+  <!-- FOOTER: Simple contact, social, and copyright                               -->
+  <!-- ============================================================================ -->
+  <footer data-section="footer" class="border-t border-white/10 bg-[#1a1a1a]">
+    <div class="mx-auto max-w-7xl px-4 py-10 md:px-8 lg:px-12">
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <p class="text-sm text-gray-400">© 2026 Sasquatch Pest Control. Rugged pest protection for Upstate New York.</p>
+        <div class="flex items-center gap-4">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-white transition hover:text-[#F59E0B]">Facebook</a>
+          <a href="contact.html" class="text-sm font-semibold text-white transition hover:text-[#F59E0B]">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
