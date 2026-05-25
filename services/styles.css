@@ -1,0 +1,10 @@
+/* ===== BRAND BASE STYLES ===== */
+    /* Bold, rugged look with strong contrast and a masculine outdoor feel */
+    body { background: #0f1110; color: #f3f4f6; }
+    .brand-dark { background: #1a1a1a; }
+    .brand-orange { color: #F59E0B; }
+    .bg-brand-orange { background: #F59E0B; }
+    .brand-green { color: #2d5a27; }
+    .bg-brand-green { background: #2d5a27; }
+    .border-brand { border-color: rgba(245, 158, 11, 0.35); }
+    .card-glow { box-shadow: 0 0 0 1px rgba(245, 158, 11, 0.08), 0 18px 40px rgba(0,0,0,0.35); }
