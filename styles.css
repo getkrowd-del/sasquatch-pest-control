@@ -1,0 +1,15 @@
+/* ===== SITE-WIDE THEME ===== */
+    /* Dark, earthy palette with rugged contrast for a masculine, high-trust feel */
+    :root { --charcoal:#1a1a1a; --orange:#F59E0B; --forest:#2d5a27; }
+    html { scroll-behavior:smooth; }
+    body { background:
+      radial-gradient(circle at top, rgba(45,90,39,.22), transparent 32%),
+      linear-gradient(180deg, #111 0%, #1a1a1a 38%, #121212 100%);
+    }
+    .grain {
+      background-image: linear-gradient(rgba(255,255,255,.03), rgba(255,255,255,.01)),
+      radial-gradient(rgba(255,255,255,.05) 1px, transparent 1px);
+      background-size: auto, 18px 18px;
+    }
+    .section-card { box-shadow: 0 16px 40px rgba(0,0,0,.28); }
+    .rust-border { border-color: rgba(245,158,11,.22); }
