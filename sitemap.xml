@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://getkrowd-del.github.io/sasquatch-pest-control/contact/</loc>
+    <loc>https://bugs.getkrowd.com/</loc>
+    <lastmod>2026-05-26T12:15:16.825Z</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://bugs.getkrowd.com/contact/</loc>
     <lastmod>2026-05-26T10:33:59.473Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://getkrowd-del.github.io/sasquatch-pest-control/pests/</loc>
+    <loc>https://bugs.getkrowd.com/pests/</loc>
     <lastmod>2026-05-26T10:33:50.532Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://getkrowd-del.github.io/sasquatch-pest-control/services/</loc>
+    <loc>https://bugs.getkrowd.com/services/</loc>
     <lastmod>2026-05-26T10:33:40.976Z</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
-  <url>
-    <loc>https://getkrowd-del.github.io/sasquatch-pest-control/</loc>
-    <lastmod>2026-05-26T10:33:31.567Z</lastmod>
     <changefreq>weekly</changefreq>
   </url>
 </urlset>
